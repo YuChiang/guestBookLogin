@@ -4,13 +4,13 @@
 //  php connect MySQL 
 // ===================
 	// database setting
-	$db_host = 'http://coder.tw/phpmyadmin';
+	$db_host = 'localhost';
 	$db_name = 'rakuda_yuchiang';
 	$db_user = 'rakuda';
 	$db_passwd = 'QzcE2BXsyp6nU3MD';
 
 	// Connecting database
-	$link = mysql_connect('db_host', 'db_user', 'db_passwd')
+	$link = mysql_connect($db_host, $db_user, $db_passwd);
     if(!$link){
     	die('Could not connect: ' . mysql_error());
     }else{

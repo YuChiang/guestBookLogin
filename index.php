@@ -15,7 +15,7 @@
 
 		<input type="submit" name="button" value="登入" />&nbsp;&nbsp;
 
-		<a href="register.php">申請帳號</a>
+		<a href="register.php">Register</a>
 
 	</form>
 </body>
