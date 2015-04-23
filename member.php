@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <?php
-include("mysql_connect.inc.php");
+include("mysql_connect.php");
 echo '<a href="logout.php">Logout</a>  <br><br>';
 
 //prevent from some nobody

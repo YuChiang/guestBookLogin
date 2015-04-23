@@ -8,7 +8,7 @@
 	// ============================
 
 	//if this page has to "connect" to database, we have to "include" it
-	include("mysql_connect.inc.php");
+	include("mysql_connect.php");
 	$id = $_POST['id'];
 	$pw = $_POST['pw'];
 
