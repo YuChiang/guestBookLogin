@@ -6,7 +6,7 @@
 </head>
 <body>
 	
-	<h1 style="text-align:center; font-family:Verdana">Login Page</h1>
+	<h1 style="font-family:Verdana">Login Page</h1>
 
 	<form name="form" method="post" action="connect.php">
 	
@@ -19,3 +19,4 @@
 
 	</form>
 </body>
+</html>

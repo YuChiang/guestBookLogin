@@ -1,12 +1,14 @@
-<?php session_start(); ?>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <?php session_start(); ?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 
 <?php
 include("mysql_connect.php");
 echo '<a href="logout.php">Logout</a>  <br><br>';
 
 //prevent from some nobody
-    if($_SESSION['usr'] != null)
+    if(ISSET($_SESSION['usr']))
     {
         echo '<a href="register.php">Register</a>    ';
         echo '<a href="update.php">Update</a>    ';
@@ -17,7 +19,7 @@ echo '<a href="logout.php">Logout</a>  <br><br>';
         $result = mysql_query($sql);
         while($row = mysql_fetch_row($result))
         {
-             echo "$row[0] - User: $row[1], ";
+             echo "$row[0] - User: $row[1]";
         }
     }
     else
